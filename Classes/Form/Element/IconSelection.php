@@ -51,7 +51,7 @@ class IconSelection extends AbstractFormElement
             'fieldWizardHtml' => $fieldWizardHtml,
         ]);
 
-        $resultArray['html'] = $templateView->render();
+        $resultArray['html'] = $this->renderLabel('tx_bwicons_icon') . $templateView->render();
         return $resultArray;
     }
 }
